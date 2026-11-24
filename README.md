@@ -1,18 +1,56 @@
-# Software Design: 
 
----
 
-## Topic 1: Design Fundamentals
+Software Engineering: 
 
-1. What is software design? Distinguish between architectural design and detailed design.
-2. What do you mean by modularity and decomposition? State two characteristics of a good split.
-3. Define coupling and cohesion. List the types of each in order from high to low (or low to high) quality.
-4. Differentiate between abstraction, encapsulation, and information hiding. What was Parnas's contribution?
+Approach	Outcome-Based Education (OBE), Bloom's Taxonomy (Cognitive Domain), BNQF-aligned
+Cognitive Levels	Knowledge (C1), Understanding (C2)
 
-## Topic 2: Design Quality and CK Metrics
+Course Outcomes (CO):
 
-5. Name and briefly explain two techniques for assessing software design quality.
-6. For the `Controller` class below, calculate `CBO(Controller)` and `COF(Controller, Bell, Light)`.
+CO1	Explain the fundamental principles of software design (modularity, coupling, cohesion, abstraction, encapsulation and information hiding).
+CO2	Describe how the quality of an object-oriented design is assessed using design reviews and software metrics (CK metrics).
+CO3	Explain software architecture and common architectural styles.
+CO4	Explain GoF design patterns and their role in object-oriented design.
+CO5	Explain enterprise application architecture patterns (Fowler's EAA patterns).
+CO6	Explain user interface design principles and interaction modalities.
+
+Section A: Knowledge (C1), 10 Marks (5 x 2)
+
+1. (a) Define software design. (b) Name the two basic steps of the design process. [2] (CO1, Knowledge (C1))
+
+2. Define coupling and cohesion. [2] (CO1, Knowledge (C1))
+
+3. Define software architecture according to Clements et al. [2] (CO3, Knowledge (C1))
+
+4. Name the three categories of GoF design patterns and write one pattern from each category. [2] (CO4, Knowledge (C1))
+
+5. List the three layers of an enterprise application architecture. [2] (CO5, Knowledge (C1))
+
+Section B: Understanding (C2), 30 Marks (4 x 7)
+
+6. (a) Differentiate between abstraction, encapsulation and information hiding. [2]
+(b) Explain Parnas's contribution to the decomposition of systems into modules. [2]
+[Total 4] (CO1, Understanding (C2))
+
+7. Explain the CBO, LCOM and WMC metrics. What does a high value of each indicate about the quality of a design?
+[Total 4] (CO2, Understanding (C2))
+
+8. (a) Explain the Model-View-Controller (MVC) architectural style. [3]
+(b) Why is it said that "UI = View + Controller"? [1]
+[Total 4] (CO3, Understanding (C2))
+
+9. Explain the Strategy pattern: its intent [1], its structure with the Navigator/RouteStrategy example [1], one benefit [1] and one liability [1].
+[Total 4] (CO4, Understanding (C2))
+
+10. (a) Explain the Data Mapper pattern and why it fits well with the Domain Model. [2]
+(b) Describe how Foreign Key Mapping represents a One-to-Many relationship, using Route and Stop as the example. [2]
+[Total 4] (CO5, Understanding (C2))
+
+11. (a) Differentiate between the Direct Manipulation, Menu Selection and Form Fill-in UI modalities. [3]
+(b) State any two guidelines for using color in UI information presentation. [1]
+[Total 4] (CO6, Understanding (C2))
+
+12. For the `Controller` class below, calculate `CBO(Controller)` and `COF(Controller, Bell, Light)`.[ Total 4]
 
    ```java
    class Controller {
@@ -48,42 +86,8 @@
            if (b != null) b.stop();
            if (l != null) l.close();
        }
-   }
+   } 
    ```
+(C02,understanding (C2))
 
-7. A `Rectangle` class has attributes `x`, `y`, `width`, `height` and the following methods: a constructor (uses all four attributes), `draw()` (uses x, y, width, height), and `calculateArea()` (uses width, height). Calculate LCOM, LCOM2, and LCOM3.
-8. What do LCOM2 = 0 and LCOM2 = 1 indicate about a class? Why does LCOM3 > 1 indicate "dead attributes"?
-9. For the `Controller` class in Question 6, calculate the McCabe version of WMC and the RFC. Also, define DIT and NOC, and explain how they relate to reuse vs. complexity.
 
-## Topic 3: Software Architecture and Architectural Styles
-
-10. Define software architecture according to Clements et al. What are its key elements?
-11. Differentiate between an architectural style and a design pattern. At which design level is each used?
-12. Explain the MVC architectural style. Why is it said that "UI = View + Controller"?
-13. Compare the Event-Based, Blackboard/Repository, and Pipes and Filters styles with one real-life example of each.
-
-## Topic 4: GoF Design Patterns
-
-14. Classify GoF patterns into Creational, Structural, and Behavioral categories, with two examples of each.
-15. Explain the Factory Method pattern: intent, participants, one benefit, and one liability. What is the Parameterized Factory variant?
-16. Explain the Strategy pattern with its intent, a UML diagram (Navigator/RouteStrategy example), and its benefits and liabilities.
-17. Explain the Template Method pattern using the StatisticCalculator example. How does it differ from Strategy?
-18. Explain the Adapter pattern. Differentiate between Object Adapter and Class Adapter with UML diagrams.
-19. Explain the Composite pattern using the Graphic/Panel example. What does the "design too general" liability mean?
-20. Explain the Façade pattern using the Compiler example. What does "Façade can become a God class" mean?
-21. Explain the participants of the Command pattern (Command, ConcreteCommand, Client, Invoker, Receiver) using the Menu/Document example.
-22. Write the code for the Singleton pattern. State two liabilities and explain why Singleton complicates unit testing.
-
-## Topic 5: Fowler's EAA Patterns
-
-23. Describe the responsibilities of the three layers of an enterprise application (Presentation, Domain, Data Source).
-24. What is the Domain Model pattern, and when should it be used? Why is the Service Layer pattern needed?
-25. Explain the Data Mapper pattern. By what other names is it known, and what do in-memory objects know about the database when using it?
-26. Explain Foreign Key Mapping for One-to-One, Many-to-One, and One-to-Many relationships (Route, Driver, Service, Stop). Where does the foreign key reside in each case?
-27. Compare Single Table, Class Table, and Concrete Table Inheritance (using the Employee example), with one benefit and one liability of each.
-
-## Topic 6: User Interface Design
-
-28. List and briefly explain the seven UI design principles.
-29. Differentiate between Direct Manipulation, Menu Selection, Form Fill-in, Command Language, and Natural Language UI modalities.
-30. What are the guidelines for using color in UI information presentation? Why is "don't depend on color alone" important? Give a practical example.
