@@ -8,10 +8,15 @@ Cognitive Levels	Knowledge (C1), Understanding (C2)
 Course Outcomes (CO):
 
 CO1	Explain the fundamental principles of software design (modularity, coupling, cohesion, abstraction, encapsulation and information hiding).
+
 CO2	Describe how the quality of an object-oriented design is assessed using design reviews and software metrics (CK metrics).
+
 CO3	Explain software architecture and common architectural styles.
+
 CO4	Explain GoF design patterns and their role in object-oriented design.
+
 CO5	Explain enterprise application architecture patterns (Fowler's EAA patterns).
+
 CO6	Explain user interface design principles and interaction modalities.
 
 Section A: Knowledge (C1), 10 Marks (5 x 2)
